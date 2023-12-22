@@ -1,0 +1,361 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*****Reusable*****/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+.heading-main h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 2; }
+
+.span-1-of-3 {
+	width: 30%; 
+}
+
+
+/**** Header *****/
+header {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../img/doors-1613314_640.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment:fixed;
+   
+}
+
+.nav-background {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 50;
+    border-bottom: 2px solid rgb(113, 81, 63);
+} 
+
+#logo img {
+    width: 100px;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text {
+    position:absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text h1 {
+    color:rgb(204, 201, 197);
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    word-spacing: 5px;
+}
+
+.tel {
+    position: absolute;
+    border: 5px solid rgb(53, 37, 27);
+    background-color: rgb(113, 81, 63);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    padding: 7px;
+    top: 60%;
+    left: 80%;
+    color: #fff;
+    border-radius: 50px;
+    transform: translate(-50%,-50%);
+}
+
+/**** Nav*****/
+nav ul {
+    float: right;
+    margin-top: 15px;
+    position: fixed;
+    margin-left: 28%;
+    z-index: 100;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    border-bottom: 2px solid rgb(65, 16, 16);
+    transition: 1s;
+}
+
+
+/**** Drop menu *****/
+
+.drop-down ul {
+    display: block;
+    margin-top: -29px;
+ }  
+ 
+.drop-down ul li {
+     display: block;
+ }  
+  
+.fa-angle-right {
+     float:right;
+ }
+
+ ul li ul.drop-down li {
+    display: block;
+}
+
+ul li ul.drop-down {
+    background: rgb(113, 81, 63);
+    position: relative; 
+    display: none;
+}
+
+ul li:hover .drop-down {
+   display: block;
+   position: absolute;
+   background: rgb(113, 81, 63);
+   margin-top: 2px;
+   margin-left: -3px;
+   width: 145px;
+}
+.right-menu {
+    display: none;
+    position:relative;
+    margin-left: -229px;
+} 
+.right-menu a {
+    background-color: rgb(113, 81, 63);
+}
+.hov:hover .right-menu {
+    position:relative;
+    display: block;
+} 
+
+/**** Main page photos *****/
+.img1 {
+    background-image: url(../img/Drevene.jpg);
+}
+
+.img2 {
+    background-image: url(../img/dreveneProsklenne.jpg);
+}
+
+.img3 {
+    background-image: url(../img/Posuvne-do-pouzdra\,dvojkridle-reverzni-dvere.jpg);
+}
+
+.img4 {
+    background-image: url(../img/Sklenene-zabradli.jpg);
+}
+
+.img5 {
+    background-image: url(../img/Zabradli-s-hornim-kotvenim.jpg);
+}
+
+.img6 {
+    background-image: url(../img/celoskleněnné.jpg);
+}
+
+.container {
+    display: flex;
+    width:85vw;
+}
+
+.slide {
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 80vh;
+    border-radius: 50px;
+    color: rgb(53, 37, 27);
+    cursor: pointer;
+    margin: 7px;
+    flex: 0.7;
+    position: relative;
+    transition: 0.5s;
+}
+
+.slide h2 {
+    font-size: 25px;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    opacity: 0;
+}
+
+.slide.active {
+    flex: 5;
+}
+
+.slide.active h2 {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+/**** Mobile *****/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 5px;
+    display: none;
+}
+
+
+/**** o Nás *****/
+.info-o-nas {
+    font-size: 20px;
+    color: rgb(53, 37, 27);
+}
+
+
+
+/**** Reference *****/
+.reference {
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url("../img/doors-1613314_640.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.reference h2 {
+    color:rgb(204, 201, 197);
+    padding-top: 40px;
+}
+
+.reference h2::after {
+    border-bottom: 2px solid rgb(65, 16, 16);
+}
+
+.one-reference {
+    color: rgb(204, 201, 197);
+    font-size: 18px;
+}
+
+.one-reference p {
+    font-style: italic;
+}
+
+.photo-name {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.photo-name p {
+    padding: 20px;
+    margin-left: 50px;
+    font-style: normal;
+}
+
+.photo-name img {
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+/**** contact-form*****/
+.contact-form {
+    max-width: 500px;
+    text-align: center;
+}
+
+.contact-form input {
+    width: 80%;
+    margin: 5px;
+    padding: 7px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.contact-form textarea {
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 7px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.submit {
+    background: rgb(113, 81, 63);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    transition: 3s;
+    background-color: rgb(83, 12, 12);
+}
+
+/**** footer*****/
+.footer-page {
+    background-color:rgb(113, 81, 63);
+    margin-top: 30px;
+    color: rgb(204, 201, 197);
+}
+
+.footer-text {
+    text-align: center;
+    margin: 10px;
+}
+
+/****Stop floating****/
+.clearfix {zoom: 1}
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+

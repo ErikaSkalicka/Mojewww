@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("img/doors-1613314_640.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment:fixed;
+}
+/*****Row*****/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+/*****Main*****/
+h1 {
+    position: absolute;
+    color: rgb(204, 201, 197);
+    top: 2%;
+    left:41%;
+    display: block;
+    font-size: 42px;
+    text-shadow: 10px 3px 10px black;
+}
+
+#logo img{
+    padding-top: 20px;
+    width: 77px;
+    top: 13%;
+    margin-left: 3%;
+}
+
+.zpet a {
+    position: fixed;
+    font-size: 27px;
+    text-decoration: none;
+    color:  rgb(204, 201, 197);
+    cursor: pointer;
+    margin-left: 91%;
+    margin-top: 1%;
+}
+.zpet a:hover {
+    font-size: 35px;
+    transition: 1s;
+}
+
+/*****Foto*****/
+.dvereFoto{
+    margin: 10px 30px;
+    display: block;
+}
+
+.dvereFoto img{
+    width: 232px;
+    height: 324px;
+    margin-top: 120px;
+    padding: 3px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.dvereFoto img:hover{
+    transform: scale(1.8);
+}
+
+/****Footer*****/
+.footer-page {
+    background-color:rgb(113, 81, 63);
+    margin-top: 30px;
+    color: rgb(204, 201, 197);
+}
+
+.footer-text {
+    text-align: center;
+    margin: 10px;
+}
+
+/*****Media*****/
+@media (max-width: 700px) {
+h1 {
+    margin-left: -13%;
+    margin-top: 10%;
+    }
+
+.zpet a {
+    margin-left: 83%;
+    }
+
+.dvereFoto{
+    margin-top: -9%;
+    }    
+
+.dvereFoto img {
+    margin-bottom: -29%;
+    margin-left: 22%;
+}    
+.dvereFoto img:hover{
+    width: auto;
+    overflow: hidden;
+}
+.footer-page {
+    position: relative;
+    margin-top: 121px;
+}
+}

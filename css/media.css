@@ -1,0 +1,158 @@
+@media (max-width: 700px) {
+    
+    /**** Reference *****/
+    .col.span-1-of-3.one-reference {
+        width: 45%;
+        margin-left: 10px;
+    }
+
+    .one-reference:nth-child(3) {
+        display: none;
+    }
+
+    #logo img {
+        width: 100px;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        transform: translate(-50%,-50%);
+    }    
+    /**** About Us *****/
+    .dvere-zarubne-example img {
+        margin-left: 10px;
+        margin-right: 10px;
+    }  
+
+    .dvere-zarubne-example .span-1-of-2 {
+        width: 48%;
+    }
+    .nav-background {
+        overflow: hidden;
+    }
+  
+    .container {
+        width: 100vw;
+    }
+    .slide:nth-of-type(4), .slide:nth-of-type(5){
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /****Mobile navigation****/
+   
+    header nav {
+        position: absolute;
+        display: block;
+    }
+   
+    header nav ul li ul {
+        position: absolute;
+        left: 0;
+    }
+
+    .right-menu {
+        display: none;
+        position:relative;
+        margin-left: 107px;
+        } 
+
+    .right-menu a {
+        background-color: rgb(113, 81, 63);
+        display: block;
+        }
+    .hov:hover .right-menu {
+        position:relative;
+        display: block;
+        } 
+
+    header ul li ul li ul {
+        left: 20px;
+    }
+
+    nav ul {
+        display: none;
+        z-index: 200;
+        margin-left: -2px;
+    }
+
+    nav ul li {
+        display:block; 
+    } 
+    
+    .mobile-nav-back {
+        height: 160px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        border-bottom: 2px solid white;
+        display: none;
+        z-index: 100;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+        z-index: 200;
+        position: fixed;
+        right: 2%;
+    }
+   
+    ul li ul.drop-down li {
+        display: none;
+    }
+    ul li:hover .drop-down li{
+        display: block;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+   /****Photo gallery****/
+   
+    .photo-segment .col {
+        margin-left: 0px;
+    }
+    .photo-segment li {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .col.span-1-of-3.one-reference {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.photo-name {
+    float: right;
+    margin-right: 20px;
+}
+
+
+@media (max-width: 700px) {
+
+/**** header*****/
+.header-text {
+    width: 100%;
+    left: 0px;
+    transform: translate(0%,0%);
+}
+
+.header-text h1 {
+    text-align: center;
+    margin-top: -62%;
+}
+
+.tel {
+    display: block;
+    margin-top: -25px;
+    margin-left: -131px;
+} 
+}
+
+
